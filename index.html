@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="js2ch.css" rel="stylesheet" type="text/css" />
+	<script language='javascript' src='jquery-1.8.2.min.js'></script>
+	<script language='javascript' src='jquery-ui-1.9.1.custom.min.js'></script>
+	<script language='javascript' src='jquery.json-2.4.min.js'></script>
+	<script language='javascript' src='js2ch.js'></script>
+	<script language='javascript' src='js2ch.menu.js'></script>
+	<script language='javascript' src='js2ch.category.js'></script>
+	<script language='javascript' src='js2ch.bbs.js'></script>
+	<script language='javascript' src='js2ch.thread.js'></script>
+	<script language='javascript' src='js2ch.threadmenu.js'></script>
+	<script language='javascript' src='js2ch.res.js'></script>
+	<script language='javascript' src='js2ch.history.js'></script>
+	<script language='javascript' src='js2ch.lightbox.js'></script>
+	<script language='javascript' src='jquery.xdomainajax.js'></script>
+
+<script language='javascript'>
+<!--
+
+$(function() {
+	js2ch.init({
+		// 表示用DIVの設定 
+		divMenu: '#js2ch_menu',
+		divBbs: '#js2ch_bbs',
+		divThread: '#js2ch_thread',
+
+		// ポップアップ領域の設定 
+		popupTop: $('#js2ch_menu').offset().top,
+		popupLeft: $('#js2ch_menu').offset().left,
+		popupWidth: $('#js2ch_menu').width(),
+		popupHeight: ($('#js2ch_bbs').offset().top + $('#js2ch_bbs').height()) - $('#js2ch_menu').offset().top,
+
+		// 外部HTML表示時のスケール 
+		outsideScale: 0.75,
+		
+		__prop_end__ : null
+	});
+});
+
+/*
+function aaa() {
+	var real_width = 320;
+	var real_height = 240;
+	var url = 'http://ext.nicovideo.jp/thumb_watch/sm10860248?w=' + real_width + '&h=' + real_height;
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src = url;
+
+	document.write_ = document.write;
+	document.write = function (s) {
+//		document._write(s);
+		var div = document.getElementById('niconico');
+		div.innerHTML = s;
+		document.write = document._write;
+	}
+	var div = document.createElement('DIV');
+	div.id = 'niconico';
+	div.appendChild(script);
+	document.body.appendChild(div);
+}
+*/
+
+//-->
+</script>
+<style style="css/text">
+<!--
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table td, table th {
+}
+
+table th {
+}
+
+//-->
+</style>
+</head>
+<body>
+<div>
+	<table>
+	<tr>
+		<td style='vertical-align:top;'>
+			<div id='js2ch_menu'><div class='title'>カテゴリ</div><div class='contents'></div></div>
+		</td>
+		<td rowspan='2' style='vertical-align:top;'>
+			<div id='js2ch_thread'><div class='title'>スレッド</div><div class='contents'></div></div>
+		</td>
+	</tr>
+	<tr>
+		<td style='vertical-align:top;'>
+			<div id='js2ch_bbs'><div class='title'>板</div><div class='contents'></div></div>
+		</td>
+	</tr>
+	</table>
+</div>
+<div style='font-size:9pt;'>
+ニコニコ動画再生時セキュリティエラーになる場合、
+<a href='http://www.macromedia.com/support/documentation/jp/flashplayer/help/settings_manager04.html' target='_blank'>
+Flash 設定
+</a>
+でindex.htmlのフォルダを有効にしてください。
+</div>
+
+</body>
+</html>

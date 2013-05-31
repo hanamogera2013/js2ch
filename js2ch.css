@@ -1,0 +1,377 @@
+
+.menu_table td, .menu_table th {
+	padding: 3px;
+	text-align: center;
+	font-size: 9pt;
+}
+
+.menu_table th {
+	background-color: black;
+	color: white;
+}
+
+.menu_cell_border {
+	border: solid 1px silver;
+}
+
+.menu_cell_select_border {
+	border-top: solid 2px black;
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+	border-bottom: solid 2px #eee;
+/*	box-shadow: inset 0px 3px #666; */
+}
+
+.menu_cell_row_shadow {
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-right: solid 1px silver;
+	border-bottom: solid 2px black;
+/*	box-shadow: 0px 3px #666;  */
+}
+
+.menu_bbs_border {
+	border-top: none;
+	border-left: solid 1px silver;
+	border-right: solid 1px silver;
+	border-bottom: none;
+}
+
+.menu_table td {
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.menu_cell_select {
+	background-color: #eee;
+	font-weight: bold;
+}
+
+.menu_cell_bbs {
+	background-color: #eee;
+}
+
+.menu_item_hover {
+	text-decoration: underline;
+}
+
+.bbs_item {
+	padding: 3px 6px;
+	float: left;
+}
+
+.select_bbs_item {
+	font-weight: bold;
+}
+
+.select_bbs_row {
+	color:red;
+}
+
+.reading_bbs_row {
+	font-weight: bold;
+}
+
+.bbs_row_hover {
+	text-decoration: underline;
+}
+
+.bbs_table td, .bbs_table th {
+	text-align: center;
+	font-size: 9pt;
+}
+
+.bbs_table th {
+	padding: 3px;
+	background-color: black;
+	color: white;
+}
+
+.bbs_table td {
+	padding: 2px;
+}
+
+.bbs_table .index_cell {
+	font-size: 9pt;
+	text-align: right;
+}
+
+.bbs_table .title_cell {
+	font-size: 9pt;
+	text-align: left;
+}
+
+.bbs_table .count_cell {
+	font-size: 9pt;
+	text-align: right;
+}
+
+.bbs_odd_line {
+	background-color: white;
+}
+
+.bbs_even_line {
+	background-color: #e0e0e0;
+}
+
+.test {
+	box-shadow: 3px 3px 3px silver;
+};
+
+body {
+	padding-left: 1px;
+}
+
+#js2ch_menu {
+	width:602px;
+}
+
+#js2ch_bbs {
+	width:602px;
+}
+
+#js2ch_thread {
+	width:602px;
+}
+
+.title, .info {
+	width: 100%;
+	text-align: center;
+	padding: 4px 0px;
+	background-color: black;
+	color: white;
+	font-size: 10pt;
+	font-weight: bold;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contents {
+	width: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border: solid 1px #000;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.res {
+	border-bottom: solid 1px silver;
+	font-size: 9pt;
+	padding : 4px;
+	word-wrap:break-word;
+}
+
+#js2ch_thread .title {
+	font-size: 9pt;
+	font-weight: normal;
+}
+
+#js2ch_menu .contents {
+	height: 370px;
+}
+
+#js2ch_bbs .contents {
+	height: 350px;
+}
+
+#js2ch_thread .contents {
+	height: 746px;
+	padding: 0px;
+}
+
+#js2ch_thread .info {
+	background-color: black;
+}
+
+.res_inlineimage {
+	width: 100px;
+	height: 100px;
+	padding: 2px;
+	border: solid 1px silver;
+	float: left;
+	margin: 2px;
+	display:table-cell;
+	text-align: center;
+	vertical-align: middle;
+	layout-grid-line:100px;
+}
+
+.res_inlineimage img {
+	vertical-align: middle;
+}
+
+/* ツールチップ */
+.tooltip {
+	position: absolute;
+	background-color: white;
+	border: solid 1px black;
+	width: 200px;
+	padding: 4px;
+	font-size: 8pt;
+	box-shadow: 1px 1px 2px black;
+}
+
+/* ライトボックス(外部、画像、動画)は、このクラスつけてね */
+.lightbox {
+}
+
+/* ローディング中のアニメーション */
+.loading_animation {
+/*	position: absolute; */
+	margin: 0 auto;
+	width: 30px; /*ローディングアイコンの横サイズ*/
+	height: 30px; /*ローディングアイコンの縦サイズ*/
+	border-radius: 50%;  /*CSS3で円を書く*/
+	border: 8px solid #808080;  /*円に○の白枠をつける*/
+	border-right-color: transparent; /*円の右にC状の空きをつける*/
+/*	-webkit-animation: spin 1s infinite linear; 回転のアニメーションをつける*/
+	-webkit-animation-name: fade,spin;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: spin 1s infinite linear;
+}
+
+.loading_circle2 {
+	position: absolute; 
+	width: 80px; /*ローディングアイコンの横サイズ*/
+	height: 80px; /*ローディングアイコンの縦サイズ*/
+	border-radius: 50%;  /*CSS3で円を書く*/
+	border: 12px solid #fff;  /*円に○の白枠をつける*/
+	border-right-color: transparent; /*円の右にC状の空きをつける*/
+/*	-webkit-animation: spin 1s infinite linear; 回転のアニメーションをつける*/
+	-webkit-animation-name: fade,spin;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: spin 1s infinite linear;
+}
+
+ /*キーフレームのアニメーションをつける*/
+@-webkit-keyframes spin
+{
+	0% { -webkit-transform: rotate(0deg); }
+	50%  { -webkit-transform: rotate(180deg); }
+	100%   { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes fade
+{
+	0% { opacity: 0.4; }
+	50%  { opacity: 1; }
+	100%   { opacity: 0.4; }
+}
+
+@-moz-keyframes spin
+{
+	0% { -moz-transform: rotate(0deg); opacity: 0.4; }
+	50%  { -moz-transform: rotate(180deg); opacity: 1; }
+	100%   { -moz-transform: rotate(360deg); opacity: 0.4; }
+}
+
+.threadmenu_out {
+	color: gray;
+	background-color: black;
+}
+
+.threadmenu_over {
+	color: white;
+	background-color: silver;
+}
+
+.threadmenu_select {
+	color: black;
+	background-color: white;
+}
+
+.poster_heavy {
+	color:red;
+	font-weight:bold;
+}
+
+.poster_middle {
+	color:#a00;
+	font-weight:bold;
+}
+
+.poster_light {
+	color:#000;
+	font-weight:bold;
+}
+
+.poster_heavy_reverse {
+	background-color:red;
+	color:white;
+	font-weight:bold;
+}
+
+.poster_middle_reverse {
+	background-color:#a00;
+	color:white;
+	font-weight:bold;
+}
+
+.poster_light_reverse {
+	background-color:#000;
+	color:white;
+	font-weight:bold;
+}
+
+.blink_animation {
+	-webkit-animation: blink_keyframes 10s 1 linear;
+	-moz-animation: blink_keyframes 10s 1 linear;
+}
+
+@-webkit-keyframes blink_keyframes
+{
+	0% { background-color: #f00; }
+	10% { background-color: #000; }
+	12% { background-color: #f00; }
+	20% { background-color: #000; }
+	22% { background-color: #e00; }
+	30% { background-color: #000; }
+	32% { background-color: #e00; }
+	40% { background-color: #000; }
+	42% { background-color: #c00; }
+	50% { background-color: #000; }
+	52% { background-color: #a00; }
+	60% { background-color: #000; }
+	62% { background-color: #800; }
+	70% { background-color: #000; }
+	72% { background-color: #500; }
+	80% { background-color: #000; }
+	82% { background-color: #200; }
+	90% { background-color: #000; }
+	92% { background-color: #000; }
+	100% { background-color: #000; }
+}
+
+@-moz-keyframes blink_keyframes
+{
+	0% { background-color: #f00; }
+	10% { background-color: #000; }
+	12% { background-color: #f00; }
+	20% { background-color: #000; }
+	22% { background-color: #e00; }
+	30% { background-color: #000; }
+	32% { background-color: #e00; }
+	40% { background-color: #000; }
+	42% { background-color: #c00; }
+	50% { background-color: #000; }
+	52% { background-color: #a00; }
+	60% { background-color: #000; }
+	62% { background-color: #800; }
+	70% { background-color: #000; }
+	72% { background-color: #500; }
+	80% { background-color: #000; }
+	82% { background-color: #200; }
+	90% { background-color: #000; }
+	92% { background-color: #000; }
+	100% { background-color: #000; }
+}
